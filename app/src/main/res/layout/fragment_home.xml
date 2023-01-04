@@ -1,23 +1,384 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment" >
+    tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/inwis"
+            android:textColor="@color/button_tampilan"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/logoactionbar" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="394dp"
+        android:layout_height="150dp"
+        android:background="@drawable/home1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_home"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_home"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:elevation="2dp"
+        android:src="@drawable/oleh_oleh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/oleh_oleh"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:elevation="8dp"
+        android:src="@drawable/pantai"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView"
+        app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/pantai"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView2"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:elevation="8dp"
+        android:src="@drawable/pegunungan"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView2"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView2"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView2"
+        app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/pegunungan"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView3"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView3"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView3" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:elevation="8dp"
+        android:src="@drawable/sejarah"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView3"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView3"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView3"
+        app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/sejarah"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView4"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView4"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView4" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:elevation="8dp"
+        android:src="@drawable/alam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/alam"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView5"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView5"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView5" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:elevation="8dp"
+        android:src="@drawable/perbelanjaan"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView5"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView5"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView5"
+        app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/perbelanjaan"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView6"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView6"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView6" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:elevation="8dp"
+        android:src="@drawable/religi"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView6"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView6"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView6"
+        app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/religi"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView7"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView7"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView7" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:elevation="8dp"
+        android:src="@drawable/seni_budaya"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView7"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView7"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView7"
+        app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/seni_budaya"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView8"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView8"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView8" />
+
+
+    <TextView
+        android:id="@+id/textView_kampung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/kampung_menu"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/selengkapnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textStyle="italic"
+            android:text="@string/selengkapnya"
+            android:textColor="@color/hijau"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView_kampung"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/imageViewKampung_Wisata"
+        android:layout_width="120dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:elevation="8dp"
+        android:src="@drawable/kampung_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kampung"
+        app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textView_kampung1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/kampung_bena_ntt"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewKampung_Wisata"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="@+id/imageViewKampung_Wisata"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKampung_Wisata" />
+
+    <ImageView
+        android:id="@+id/imageViewKampung_Wisata1"
+        android:layout_width="120dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:elevation="8dp"
+        android:src="@drawable/kampung_naga"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewKampung_Wisata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kampung"
+        app:layout_constraintVertical_bias="1.0"
+        app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textView_kampung2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Kampung Naga, JABAR"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewKampung_Wisata1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewKampung_Wisata1"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKampung_Wisata1" />
+
+    <TextView
+        android:id="@+id/textView_Destinasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="Destinasi Wisata"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kampung1" />
+
+    <TextView
+        android:id="@+id/selengkapnya2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/selengkapnya"
+        android:textColor="@color/hijau"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kampung2" />
+
+    <TextView
+        android:id="@+id/imageViewDestinasi_Wisata"
+        android:layout_width="120dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/sumut_home"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:text="SUMATERA UTARA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Destinasi"
+        app:shapeAppearanceOverlay="@style/rounded_corner"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/imageViewDestinasi_Wisata1"
+        android:layout_width="120dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/sumbar_home"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:text="SUMATERA BARAT"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDestinasi_Wisata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDestinasi_Wisata"
+        app:shapeAppearanceOverlay="@style/rounded_corner"
+        tools:ignore="RtlCompat" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

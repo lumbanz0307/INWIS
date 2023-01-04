@@ -8,19 +8,19 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.inwis.ui.home.HomeFragment"
-        android:label="@string/halaman"
+        android:label="fragment_halaman"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.inwis.ui.dashboard.DashboardFragment"
-        android:label="@string/pencarian"
+        android:label="fragment_pencarian"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.inwis.ui.notifications.NotificationsFragment"
-        android:label="@string/pemandu"
+        android:label="fragment_pemandu"
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/navigation_akun"

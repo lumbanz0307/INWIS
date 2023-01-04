@@ -8,4 +8,20 @@
     <string name="pencarian">Pencarian</string>
     <string name="pemandu">Pemandu</string>
     <string name="akun">Akun</string>
+    <string name="inwis">INWIS</string>
+    <string name="title_home">Jelajahi destinasi wisata diseluruh nusantara.</string>
+    <string name="subtitle_home">Dapatkan informasi obyek wisata dan rekomendasi terbaik hanya di wisata kita.</string>
+    <string name="oleh_oleh">Oleh-Oleh</string>
+    <string name="pantai">Pantai</string>
+    <string name="pegunungan">Pegunungan</string>
+    <string name="sejarah">Sejarah</string>
+    <string name="alam">Alam</string>
+    <string name="perbelanjaan">Perbelanjaan</string>
+    <string name="seni_budaya">Seni Budaya</string>
+    <string name="religi">Religi</string>
+    <string name="kampung_menu">Kampung Wisata</string>
+    <string name="selengkapnya"><![CDATA[Selengkapnya>>]]></string>
+    <string name="destinasi_wisata">DESTINASI WISATA</string>
+    <string name="kampung_wisata">Kampung Naga, Jawa Barat.</string>
+    <string name="kampung_bena_ntt">Kampung Bena, NTT</string>
 </resources>
