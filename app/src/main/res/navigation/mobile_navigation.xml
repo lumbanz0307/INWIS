@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.inwis.ui.home.HomeFragment"
+        android:label="@string/halaman"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.inwis.ui.dashboard.DashboardFragment"
+        android:label="@string/pencarian"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.inwis.ui.notifications.NotificationsFragment"
+        android:label="@string/pemandu"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_akun"
+        android:name="com.inwis.ui.akun.AkunFragment"
+        android:label="fragment_akun"
+        tools:layout="@layout/fragment_akun" />
+</navigation>
