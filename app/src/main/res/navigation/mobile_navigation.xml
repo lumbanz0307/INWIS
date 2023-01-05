@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_halaman">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.inwis.ui.home.HomeFragment"
+        android:id="@+id/navigation_halaman"
+        android:name="com.inwis.ui.halaman.HalamanFragment"
         android:label="fragment_halaman"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_halaman" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.inwis.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_pencarian"
+        android:name="com.inwis.ui.pencarian.PencarianFragment"
         android:label="fragment_pencarian"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_pencarian" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.inwis.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_pemandu"
+        android:name="com.inwis.ui.pemandu.PemanduFragment"
         android:label="fragment_pemandu"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_pemandu" />
     <fragment
         android:id="@+id/navigation_akun"
         android:name="com.inwis.ui.akun.AkunFragment"

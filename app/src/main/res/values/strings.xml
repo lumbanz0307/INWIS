@@ -24,4 +24,13 @@
     <string name="destinasi_wisata">DESTINASI WISATA</string>
     <string name="kampung_wisata">Kampung Naga, Jawa Barat.</string>
     <string name="kampung_bena_ntt">Kampung Bena, NTT</string>
+    <string name="todo">TODO</string>
+    <string name="kampung_naga_jabar">Kampung Naga, JABAR</string>
+    <string name="todo1">TODO</string>
+    <string name="destinasi_wisata1">Destinasi Wisata</string>
+    <string name="sumatera_utara">SUMATERA UTARA</string>
+    <string name="sumatera_barat">SUMATERA BARAT</string>
+    <string name="inwis_splash">INWIS</string>
+    <string name="todo2">TODO</string>
+    <string name="hint_search">Apa yang anda cari?</string>
 </resources>

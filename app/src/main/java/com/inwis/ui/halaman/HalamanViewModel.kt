@@ -1,13 +1,13 @@
-package com.inwis.ui.dashboard
+package com.inwis.ui.halaman
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class DashboardViewModel : ViewModel() {
+class HalamanViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+        value = "This is halaman Fragment"
     }
     val text: LiveData<String> = _text
 }
