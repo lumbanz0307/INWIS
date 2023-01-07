@@ -33,4 +33,10 @@
     <string name="inwis_splash">INWIS</string>
     <string name="todo2">TODO</string>
     <string name="hint_search">Apa yang anda cari?</string>
+    <string name="sumut">Sumatera Utara</string>
+    <string name="todo5">TODO5</string>
+    <string name="seacrh_kampung_wisata">Cari Disini</string>
+    <string name="toolbar_kampung_wisata">Kampung Wisata</string>
+    <string name="nama_akun">hello world</string>
+    <string name="email_akun">hello_world@gmail.com</string>
 </resources>
