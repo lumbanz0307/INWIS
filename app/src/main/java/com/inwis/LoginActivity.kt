@@ -10,8 +10,8 @@ import com.inwis.databinding.ActivityLoginBinding
 
 
 class LoginActivity : AppCompatActivity() {
-    lateinit var binding: ActivityLoginBinding
-    lateinit var auth : FirebaseAuth
+    private lateinit var binding: ActivityLoginBinding
+    private lateinit var auth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -52,14 +52,15 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun LoginFirebase(email: String, password: String) {
-        auth.signInWithEmailAndPassword(email, password)
+    private fun LoginFirebase(email: String,password: String) {
+        auth.signInWithEmailAndPassword(email,password)
             .addOnCompleteListener(this) {
                 if (it.isSuccessful) {
                     Toast.makeText(this, "Selamat Datang Saudara $email", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
-                } else {
+                }
+                else {
                     Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
                 }
             }

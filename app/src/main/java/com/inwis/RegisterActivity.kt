@@ -10,8 +10,8 @@ import com.inwis.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityRegisterBinding
-    lateinit var auth: FirebaseAuth
+    private lateinit var binding: ActivityRegisterBinding
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityRegisterBinding.inflate(layoutInflater)

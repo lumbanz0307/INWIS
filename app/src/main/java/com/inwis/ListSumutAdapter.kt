@@ -8,34 +8,34 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-
-class ListKampungWisataAdapter(private val listKampungWisata: ArrayList<KampungWisata>) :
-    RecyclerView.Adapter<ListKampungWisataAdapter.ListViewHolder>() {
+class ListSumutAdapter(private val listSumut: ArrayList<Sumut>) :
+    RecyclerView.Adapter<ListSumutAdapter.ListViewHolder>() {
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var tvWisata: TextView = itemView.findViewById(R.id.tv_judul)
-        var imgWisata: ImageView = itemView.findViewById(R.id.iv_wisata)
+        var tvDesc: TextView = itemView.findViewById(R.id.tv_desc)
+        var imgSumut: ImageView = itemView.findViewById(R.id.iv_wisata)
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view: View =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_kampung_wisata, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_sumut, parent, false)
         return ListViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val wisata = listKampungWisata[position]
+        val sumut = listSumut[position]
 
         Glide.with(holder.itemView.context)
-            .load(wisata.img)
-            .into(holder.imgWisata)
-        holder.tvWisata.text = wisata.kampung_wisata
-
+            .load(sumut.img)
+            .into(holder.imgSumut)
+        holder.tvWisata.text = sumut.sumut
+        holder.tvDesc.text= sumut.sumut
 
     }
 
     override fun getItemCount(): Int {
-        return listKampungWisata.size
+        return listSumut.size
     }
 }
 

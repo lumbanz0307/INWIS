@@ -17,4 +17,13 @@
     <style name="rounded_corner">
         <item name="cornerSize">10dp</item>
     </style>
+
+    <style name="Theme.INWIS.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.INWIS.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.INWIS.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
+    android:background="@color/white"
     android:padding="30dp"
     tools:context=".LoginActivity">
 
@@ -19,14 +19,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="30dp">
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_login"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/todo6"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/black"
-                android:text="Register"
+                android:text="@string/inwis_register"
                 android:textAlignment="center"
                 android:textColor="@color/teal_700"
                 android:textSize="24sp"
@@ -36,30 +48,34 @@
                 android:id="@+id/edt_email_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
-                android:inputType="textEmailAddress" />
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/edt_password_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="textPassword" />
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:autofillHints="" />
 
             <Button
                 android:id="@+id/btn_register"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:backgroundTint="@color/teal_700"
-                android:text="Register" />
+                android:backgroundTint="@color/abu_abu"
+                android:text="@string/register"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/black"
-                android:text="Already Have Account?"
+                android:text="@string/sudah_punya_akun"
                 android:textAlignment="center" />
 
             <TextView
@@ -67,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/black"
-                android:text="Login"
+                android:text="@string/masuk"
                 android:textAlignment="center"
                 android:textColor="@color/teal_700"
                 android:textStyle="bold" />
