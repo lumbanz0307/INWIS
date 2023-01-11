@@ -7,4 +7,198 @@
     android:layout_height="match_parent"
     tools:context=".ui.pemandu.PemanduFragment" >
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/button_tampilan"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/pemandu_wisata"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pemandu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/button_back"
+            tools:ignore="RtlHardcoded" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/deskripsi"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:text="@string/deskripsi1"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_search_border"
+        android:src="@drawable/irfan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/bg_search_border"
+        android:gravity="center"
+        android:text="Sangkot Nst"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv4"
+        app:layout_constraintStart_toEndOf="@+id/iv4"
+        app:layout_constraintTop_toTopOf="@+id/iv4" />
+
+    <ImageView
+        android:id="@+id/iv5"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/pito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv4"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/bg_search_border"
+        android:gravity="center"
+        android:text="Budi Sabar"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv5"
+        app:layout_constraintStart_toEndOf="@+id/iv5"
+        app:layout_constraintTop_toTopOf="@+id/iv5" />
+
+    <ImageView
+        android:id="@+id/iv6"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/land"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv5"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/bg_search_border"
+        android:gravity="center"
+        android:text="Ucok Kate"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv6"
+        app:layout_constraintStart_toEndOf="@+id/iv6"
+        app:layout_constraintTop_toTopOf="@+id/iv6" />
+
+    <ImageView
+        android:id="@+id/iv7"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/tocu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv6"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/bg_search_border"
+        android:gravity="center"
+        android:text="Delika Morang"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv7"
+        app:layout_constraintStart_toEndOf="@+id/iv7"
+        app:layout_constraintTop_toTopOf="@+id/iv7" />
+
+    <ImageView
+        android:id="@+id/iv8"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_search_border"
+        android:src="@drawable/kiw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv7"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/bg_search_border"
+        android:gravity="center"
+        android:text="Susanti"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv8"
+        app:layout_constraintStart_toEndOf="@+id/iv8"
+        app:layout_constraintTop_toTopOf="@+id/iv8" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

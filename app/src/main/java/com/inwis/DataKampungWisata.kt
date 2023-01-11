@@ -29,5 +29,4 @@ object DataKampungWisata {
             }
             return list
         }
-
 }

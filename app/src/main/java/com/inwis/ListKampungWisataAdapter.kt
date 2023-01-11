@@ -9,16 +9,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 
-
-class ListKampungWisataAdapter (private val listKampungWisata: ArrayList<KampungWisata>) : RecyclerView.Adapter<ListKampungWisataAdapter.ListViewHolder>() {
-    inner class ListViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var tvWisata : TextView = itemView.findViewById(R.id.tv_judul)
-        var imgWisata : ImageView = itemView.findViewById(R.id.iv_wisata)
+class ListKampungWisataAdapter(private val listKampungWisata: ArrayList<KampungWisata>) :
+    RecyclerView.Adapter<ListKampungWisataAdapter.ListViewHolder>() {
+    inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var tvWisata: TextView = itemView.findViewById(R.id.tv_judul)
+        var imgWisata: ImageView = itemView.findViewById(R.id.iv_wisata)
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_kampung_wisata, parent,false)
+        val view: View =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_kampung_wisata, parent, false)
         return ListViewHolder(view)
     }
 
@@ -28,7 +29,8 @@ class ListKampungWisataAdapter (private val listKampungWisata: ArrayList<Kampung
         Glide.with(holder.itemView.context)
             .load(wisata.img)
             .into(holder.imgWisata)
-        holder.tvWisata.text= wisata.kampung_wisata
+        holder.tvWisata.text = wisata.kampung_wisata
+
 
     }
 

@@ -242,7 +242,7 @@
 
 
     <TextView
-        android:id="@+id/textView_kampung"
+        android:id="@+id/tv_wisata"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -254,20 +254,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-        <TextView
-            android:id="@+id/selengkapnya"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:textStyle="italic"
-            android:text="@string/selengkapnya"
-            android:textColor="@color/hijau"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView_kampung"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+    <TextView
+        android:id="@+id/selengkapnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/selengkapnya"
+        android:textColor="@color/hijau"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_wisata"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <ImageView
         android:id="@+id/imageViewKampung_Wisata"
@@ -278,7 +278,7 @@
         android:elevation="8dp"
         android:src="@drawable/kampung_home"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_kampung"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wisata"
         app:shapeAppearanceOverlay="@style/rounded_corner"
         android:contentDescription="@string/todo"
         tools:ignore="ContentDescription" />
@@ -299,16 +299,15 @@
         android:id="@+id/imageViewKampung_Wisata1"
         android:layout_width="120dp"
         android:layout_height="66dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="50dp"
+        android:contentDescription="@string/todo1"
         android:elevation="8dp"
         android:src="@drawable/kampung_naga"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewKampung_Wisata"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_kampung"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wisata"
         app:layout_constraintVertical_bias="1.0"
         app:shapeAppearanceOverlay="@style/rounded_corner"
-        android:contentDescription="@string/todo1"
         tools:ignore="ContentDescription" />
 
     <TextView

@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "1085816044011",
-    "project_id": "inwis-ef37a",
-    "storage_bucket": "inwis-ef37a.appspot.com"
+    "project_number": "618650211131",
+    "project_id": "inwis-55d3e",
+    "storage_bucket": "inwis-55d3e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1085816044011:android:6f13302733b5d7d7f901ae",
+        "mobilesdk_app_id": "1:618650211131:android:0c7953fc7a374740e3dd1e",
         "android_client_info": {
           "package_name": "com.inwis"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1085816044011-d0642fbprqv33ffl90mm5980gs8aj1lc.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.inwis",
-            "certificate_hash": "ce835aae178632273fb0e5f31a80344b121dfc26"
-          }
-        },
-        {
-          "client_id": "1085816044011-ev7qo71cftpvue8hl6hndiunqrbhejpp.apps.googleusercontent.com",
+          "client_id": "618650211131-sln155pcru8dajputqlcmm1guu1po8av.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBGNRX9d3WqJ_BFGHEGXhrjJGLv_2Ha7wY"
+          "current_key": "AIzaSyCNf3bP_FvERR4qLTyS_jib0XMuPOee8K0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1085816044011-ev7qo71cftpvue8hl6hndiunqrbhejpp.apps.googleusercontent.com",
+              "client_id": "618650211131-sln155pcru8dajputqlcmm1guu1po8av.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

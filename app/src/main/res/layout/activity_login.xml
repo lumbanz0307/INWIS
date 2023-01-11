@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
+    android:background="@color/white"
     android:padding="30dp"
     tools:context=".LoginActivity">
 
@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="27dp"
         android:background="@color/white"
         app:cardCornerRadius="20dp">
 
@@ -19,14 +21,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="30dp">
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_login"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/todo7"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/black"
-                android:text="Login"
+                android:text="@string/inwis1"
                 android:textAlignment="center"
                 android:textColor="@color/teal_700"
                 android:textSize="24sp"
@@ -36,15 +50,17 @@
                 android:id="@+id/edt_email_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
-                android:inputType="textEmailAddress" />
+                android:hint="@string/email1"
+                android:inputType="textEmailAddress"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/edt_password_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="textPassword" />
+                android:hint="@string/password1"
+                android:inputType="textPassword"
+                android:autofillHints="" />
 
             <TextView
                 android:id="@+id/forgot_password"
@@ -52,23 +68,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/black"
-                android:text="Forgot Password?"
+                android:text="@string/lupa_password"
                 android:textAlignment="textEnd" />
 
             <Button
                 android:id="@+id/btn_login"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:backgroundTint="@color/teal_700"
-                android:text="Login" />
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/abu_abu"
+                android:text="@string/masuk1"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/black"
-                android:text="New User?"
+                android:text="@string/belum_punya_akun"
                 android:textAlignment="center" />
 
             <TextView
@@ -76,13 +94,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/black"
-                android:text="Register Here"
+                android:text="@string/register1"
                 android:textAlignment="center"
                 android:textColor="@color/teal_700"
                 android:textStyle="bold" />
 
         </LinearLayout>
-
 
     </androidx.cardview.widget.CardView>
 

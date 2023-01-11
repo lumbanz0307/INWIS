@@ -63,8 +63,7 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iet_kampung_wisata"
-        tools:ignore="MissingClass" />
+        app:layout_constraintTop_toBottomOf="@+id/iet_kampung_wisata" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
